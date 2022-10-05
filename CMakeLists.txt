@@ -8,4 +8,6 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall")
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
-add_executable(cmake_hello main.cpp)
+set(SOURCES main.cpp lib/math/operations.cpp lib/math/operations.hpp)
+
+add_executable(cmake_hello ${SOURCES})
